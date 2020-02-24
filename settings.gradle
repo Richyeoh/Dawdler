@@ -1,0 +1,2 @@
+include ':app', ':dawdler', ':dawdler-ktx'
+rootProject.name = 'Dawdler'
