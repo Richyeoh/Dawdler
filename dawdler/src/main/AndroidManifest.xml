@@ -1,2 +1,16 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.richyeoh.android.dawdler" />
+    package="com.richyeoh.android.dawdler">
+
+    <application>
+        <provider
+            android:name=".Utils$DawdlerFileProvider"
+            android:authorities="${applicationId}.dawdler.provider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            android:multiprocess="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:value="@xml/dawdler_provider_paths" />
+        </provider>
+    </application>
+</manifest>
