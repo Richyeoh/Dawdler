@@ -51,6 +51,10 @@ public class App {
         return getApplication().getPackageManager();
     }
 
+    public static String getPackageName() {
+        return getApplication().getPackageName();
+    }
+
     public static Resources getResources() {
         return getApplication().getResources();
     }
