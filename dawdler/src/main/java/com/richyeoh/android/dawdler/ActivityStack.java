@@ -10,7 +10,7 @@ import androidx.annotation.Nullable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ActivityStack implements Application.ActivityLifecycleCallbacks {
+public final class ActivityStack implements Application.ActivityLifecycleCallbacks {
     private static final ActivityStack INSTANCE = new ActivityStack();
     private static ActivityLifecycleCallbacks sLifecycleCallbacks = null;
     private static ArrayList<Activity> sActivityList = new ArrayList<>();

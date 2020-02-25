@@ -2,7 +2,7 @@ package com.richyeoh.android.dawdler;
 
 import android.os.Build;
 
-public class Brands {
+public final class Brands {
     private Brands() {
     }
 

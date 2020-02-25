@@ -8,7 +8,7 @@ import androidx.core.content.FileProvider;
 
 import java.util.List;
 
-public class Utils {
+public final class Utils {
     private static void init() {
         ActivityStack.init(App.getApplication());
     }

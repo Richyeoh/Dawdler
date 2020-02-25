@@ -4,7 +4,7 @@ import android.os.Build;
 
 import java.lang.reflect.Field;
 
-public class Device {
+public final class Device {
     private Device() {
     }
 

@@ -10,7 +10,7 @@ import android.content.res.Resources;
 
 import java.lang.reflect.Method;
 
-public class App {
+public final class App {
     private static Application application;
 
     static {

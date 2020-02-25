@@ -5,7 +5,7 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
 
-public class DateOps {
+public final class DateOps {
     private static SimpleDateFormat sFormat;
 
     static {
