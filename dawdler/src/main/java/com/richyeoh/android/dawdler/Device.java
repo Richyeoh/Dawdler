@@ -5,6 +5,9 @@ import android.os.Build;
 import java.lang.reflect.Field;
 
 public class Device {
+    private Device() {
+    }
+
     public static boolean isEmulator() {
         try {
             Class<Build> clazz = Build.class;

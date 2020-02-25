@@ -28,6 +28,9 @@ public class App {
         }
     }
 
+    private App() {
+    }
+
     public static Application getApplication() {
         return application;
     }

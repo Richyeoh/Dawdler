@@ -3,6 +3,9 @@ package com.richyeoh.android.dawdler;
 import android.os.Build;
 
 public class Brands {
+    private Brands() {
+    }
+
     public static boolean isXiaomi() {
         return Build.BRAND != null && Build.BRAND.toLowerCase().equals("xiaomi");
     }
