@@ -4,16 +4,14 @@ import android.app.Activity;
 import android.content.Context;
 import android.os.Build;
 
-import androidx.core.content.FileProvider;
-
 import java.util.List;
 
-public final class Utils {
-    private static void init() {
+class Utils {
+    static void init() {
         ActivityStack.init(App.getApplication());
     }
 
-    public static Context getTopActivityOrApp() {
+    static Context getTopActivityOrApp() {
         if (ActivityStack.getStackSize() != 0) {
             List<Activity> activityList = ActivityStack.getActivityList();
             for (int i = activityList.size() - 1; i >= 0; i--) {
@@ -25,13 +23,5 @@ public final class Utils {
             }
         }
         return App.getApplicationContext();
-    }
-
-    public static final class DawdlerFileProvider extends FileProvider {
-        @Override
-        public boolean onCreate() {
-            init();
-            return true;
-        }
     }
 }

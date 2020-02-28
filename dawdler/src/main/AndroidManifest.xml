@@ -3,7 +3,7 @@
 
     <application>
         <provider
-            android:name=".Utils$DawdlerFileProvider"
+            android:name=".DawdlerFileProvider"
             android:authorities="${applicationId}.dawdler.provider"
             android:exported="false"
             android:grantUriPermissions="true"
