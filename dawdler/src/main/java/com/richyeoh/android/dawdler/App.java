@@ -18,6 +18,7 @@ public final class App {
             @SuppressLint("PrivateApi")
             Class<?> activityThread = Class.forName("android.app.ActivityThread");
             Method currentApplication = activityThread.getDeclaredMethod("currentApplication");
+            currentApplication.setAccessible(true);
             application = (Application) currentApplication.invoke(null); // as Application
         } catch (Exception e) {
             e.printStackTrace();
