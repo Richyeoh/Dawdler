@@ -6,7 +6,7 @@ import android.os.Build;
 
 import java.util.List;
 
-class Utils {
+final class Utils {
     static void init() {
         ActivityStack.init(App.getApplication());
     }
