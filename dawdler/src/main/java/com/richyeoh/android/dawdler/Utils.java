@@ -24,4 +24,8 @@ final class Utils {
         }
         return App.getApplicationContext();
     }
+
+    static Object getSystemService(String name) {
+        return App.getApplication().getSystemService(name);
+    }
 }
