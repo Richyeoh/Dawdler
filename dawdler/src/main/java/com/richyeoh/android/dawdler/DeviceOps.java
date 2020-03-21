@@ -4,8 +4,8 @@ import android.os.Build;
 
 import java.lang.reflect.Field;
 
-public final class Device {
-    private Device() {
+public final class DeviceOps {
+    private DeviceOps() {
     }
 
     public static boolean isEmulator() {

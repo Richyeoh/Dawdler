@@ -8,7 +8,7 @@ import java.util.List;
 
 final class Utils {
     static void init() {
-        ActivityStack.init(App.getApplication());
+        ActivityStack.init(AppOps.getApplication());
     }
 
     static Context getTopActivityOrApp() {
@@ -22,10 +22,10 @@ final class Utils {
                 return activity;
             }
         }
-        return App.getApplicationContext();
+        return AppOps.getApplicationContext();
     }
 
     static Object getSystemService(String name) {
-        return App.getApplication().getSystemService(name);
+        return AppOps.getApplication().getSystemService(name);
     }
 }

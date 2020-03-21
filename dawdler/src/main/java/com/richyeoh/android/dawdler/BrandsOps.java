@@ -2,8 +2,8 @@ package com.richyeoh.android.dawdler;
 
 import android.os.Build;
 
-public final class Brands {
-    private Brands() {
+public final class BrandsOps {
+    private BrandsOps() {
     }
 
     public static boolean isXiaomi() {

@@ -10,7 +10,7 @@ import android.content.res.Resources;
 
 import java.lang.reflect.Method;
 
-public final class App {
+public final class AppOps {
     private static Application application;
 
     static {
@@ -29,7 +29,7 @@ public final class App {
         }
     }
 
-    private App() {
+    private AppOps() {
     }
 
     public static Application getApplication() {
